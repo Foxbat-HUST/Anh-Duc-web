@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color:#1989af}
+#adm_wrapper{width:999px; margin:auto}
+#adm_banner{width:999px; height:192px; background-image:url(images/banner.jpg)}
+#adm_content{width:999px; min-height:279px;background-color: #FFF; float:left}
+#adm_footer{width:999px; min-height:20px; background-color:#1989af; clear:both}
+
+#adm_menu{width:999px; background-color: #1989af; margin-top:1px}
+#adm_menu a{ float:left; border-right:solid 1px #1989af; display:block; width:189px; background-color:#000;  text-align:center; padding:5px; text-transform:uppercase; }
+#adm_menu a:link , #adm_menu a:visited {text-decoration:none; color:#1989af; font-weight:bold; }
+#adm_menu  a:hover{color:#C33;} 
+
+.adm_icon a:hover {padding:10px; margin_top:3px}
+.adm_icon2 a:hover {padding:10px; margin_top:3px}
+
+/* list Thể Loại */
+#tabTieuDe{background-color:#1989af; color:#FFF; padding:5px; font-weight:bold; text-align:center}
+#tabTenHang{background-color:#666; color:#FFF; padding:5px; font-weight:bold; text-align:center}
+#tabTenHang a:link , #tabTenHang a:visited {text-decoration:none; color:#FF0;font-weight:bold; color:#FF0}
+#tabTenHang  a:hover{color:#C33} 
+
+.chan{background-color:#b6def8}
+.le{background-color:#FFF}
+.abc{background-color:#f79d33}
+.hang a:link , .hang a:visited {text-decoration:none; color:#369;font-weight:bold; color:#369}
+.hang  a:hover{color:#FFF} 
+
+/* phân trang */
+#thanhphantrang{margin-top:5px; font-weight:bold}
+#thanhphantrang a:link , #thanhphantrang a:visited {text-decoration:none; color:#1989af;font-weight:bold; color:#1989af}
+#thanhphantrang  a:hover{color:#C33} 
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+     <title>Test Page</title>
+
+     <style type="text/css">
+        * { margin: 0; padding: 0;}
+        #wrapper {
+            width: 800px;
+            margin: 40px auto;
+        }
+        
+        a {
+            color: green;
+            text-decoration: none;
+        }
+        
+        a:hover, a:visited {
+            color: maroon;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .boxes {
+            width: 270px;
+            border: 1px solid gray;
+            padding: 0px; margin: 0px 0px 0px 0px;
+            background: white;
+        }
+        
+        .boxes h2 {
+            padding: 10px;
+            color: white;
+        	font-size: 1.8em;
+            background: url(images/cat_bg.jpg) repeat-x top left scroll;
+            
+        }
+        
+        .boxes ul {
+            list-style: none;
+            padding: 10px 10px 10px 10px;
+        }
+        
+        .boxes ul li {
+            position: relative;
+            border-bottom: 1px solid #ebebeb;
+        }
+        
+        .boxes ul li a {
+            font-size: 1.1em;
+            color: #176092;
+            line-height: 2em;
+        }
+        
+        .boxes ul li:hover {
+            background: #eee;
+        }
+            
+        ul#nav li p {
+            width: 300px;
+            border: 1px solid gray;
+            padding: 10px;
+            background: #dedede;
+        }
+        
+        img.info {
+            margin: 15px;
+            float: left;
+            clear: both;
+        }
+        
+        p {
+            margin: 20px 0px;
+        }
+     </style>
+
+     <script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+     <script type="text/javascript">
+        $(document).ready(function() {
+        $('#nav li a').hover(function() {
+            $(this)
+            .parent('li')
+            .find('p')
+            .css({
+                position:'absolute',
+                left: '260px',
+                top: '-20px'
+                
+                })
+            .removeClass('hidden')
+            .stop()
+            .animate({opacity: 1}, 'fast');
+        }, function() {
+            $(this)
+            .parent()
+            .find('p')
+            .stop()
+            .animate({opacity: 0}, 'fast');
+        });
+        });
+     </script>
+</head>
+
+<body>
+	<div id="wrapper">
+    <div class="boxes">
+    <h2>Lastest Posts</h2>
+        <ul id="nav">
+           <li>
+                <a href="#">jQuery tab Navigation</a>
+                <p class="hidden">
+                <img src="images/1.png" alt="first pic" class='info' />
+                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
+                     ac turpis egestas. Vestibulum tortor quam, feugiat vitae
+                </p>
+           </li>
+           <li>
+               <a href="#">Learn about jQuery</a>
+               <p class="hidden">
+               <img src="images/2.png" alt="first pic" class='info' />
+                 Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
+                 ac turpis egestas. Vestibulum tortor quam, 
+               </p>
+           </li>
+           <li>
+               <a href="#">CSS3 is coming soon</a>
+               <p class="hidden">
+               <img src="images/3.png" alt="first pic" class='info' />
+                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
+                     ac turpis egestas. Vestibulum tortor quam, 
+               </p>
+           </li>
+           <li>
+               <a href="#">HTML5 is really cooool</a>
+               <p class="hidden">
+               <img src="images/4.png" alt="first pic" class='info' />
+                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
+                     ac turpis egestas. Vestibulum tortor quam, 
+               </p>
+           </li>
+        </ul>
+        </div><!--end .boxes-->
+    
+    </div><!--End #wrapper-->
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+#wrapper {
+	width:9290px;
+	min-height:500px;
+	height:auto!important;
+	height:500px;
+	margin:0 auto;
+	background:url(images/images/lapnen_04.jpg) repeat-x fixed;
+}
+
+#header {
+	width:900px;
+	height:920px;
+	padding-left:20px;
+	
+}
+
+#mainNa {
+	width:220px;
+	height:600px;
+	float:left;
+}
+
+#content {
+	width:680px;
+	height:auto!important;
+	float:right;
+}
+
+
+#logo {
+	background:url(images/logo.jpg) no-repeat;
+	width:528px;
+	height:100px;
+	
+}
+#navigation {
+	background:url(images/lapnen_navigation.jpg) repeat-x;
+	height:50px;
+}
+#footer_right {
+	background:url(images/footer_left.jpg) no-repeat;
+}
